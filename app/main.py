@@ -219,7 +219,7 @@ def show_questions_randomly():
 
 @app.route('/img/<img>', methods=['GET'])
 def show_img(img):
-  return open('/img/'+img,'r').read()
+  return open('img/'+img,'r').read()
 
 '''
 @TODO: 
