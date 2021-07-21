@@ -215,6 +215,12 @@ def show_questions_randomly():
         'success':True,
         'results':next_question
         })
+
+
+@app.route('/img/<img>', methods=['GET'])
+def show_img(img):
+  return open('/img/'+img,'r').read()
+
 '''
 @TODO: 
 Create error handlers for all expected errors 
